@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html style="scroll-padding-top: 95px;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="https://howto.rc3.world/img/favicon.ico">
+        <title>Maps - rC3 howto</title>
+        <link href="Maps%20-%20rC3%20howto-Dateien/bootstrap.css" rel="stylesheet">
+        <link href="Maps%20-%20rC3%20howto-Dateien/font-awesome.css" rel="stylesheet">
+        <link href="Maps%20-%20rC3%20howto-Dateien/base.css" rel="stylesheet">
+
+        <script src="Maps%20-%20rC3%20howto-Dateien/jquery-1.js" defer="defer"></script>
+        <script src="Maps%20-%20rC3%20howto-Dateien/bootstrap.js" defer="defer"></script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="https://howto.rc3.world/" title="rC3 howto"><img src="Maps%20-%20rC3%20howto-Dateien/rc3_logo_pink.svg" title="rC3 howto"></a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="https://howto.rc3.world/styleguide.html" class="nav-link">Styleguide</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="https://howto.rc3.world/maps.html" class="nav-link">Maps</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://howto.rc3.world/maschinenraum.html" class="nav-link">Maschinenraum</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://howto.rc3.world/play.html" class="nav-link">Play</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://howto.rc3.world/gema.html" class="nav-link">GEMA</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://howto.rc3.world/sponsoring.html" class="nav-link">Sponsoring</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="https://howto.rc3.world/styleguide.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="https://howto.rc3.world/maschinenraum.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary" style="top: 95px;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="0"><a href="#howto-rc3-world-maps" class="nav-link">HowTo rC3 world maps</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="1"><a href="#metainformationen" class="nav-link">Metainformationen</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#disclaimer" class="nav-link">Disclaimer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#updates" class="nav-link">Updates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#known-bugs" class="nav-link">Known Bugs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#schnell-uberblick" class="nav-link">Schnell-Überblick</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#limitierungen" class="nav-link">Limitierungen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#starter-kit" class="nav-link">Starter-Kit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tiles-sprites" class="nav-link">Tiles / Sprites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#layer-und-attribute" class="nav-link">Layer und Attribute</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wie-kommts-spater-in-die-world" class="nav-link">Wie kommts später in die world?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#einstiegspunkt-lobby-exit" class="nav-link">Einstiegspunkt / Lobby / Exit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="0"><a href="#kartengestatung" class="nav-link">Kartengestatung</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="1"><a href="#tiles" class="nav-link">Tiles</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tiles-finden" class="nav-link">Tiles finden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tiles-gestalten-pixeln" class="nav-link">Tiles gestalten / "pixeln"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wande-kollisionen" class="nav-link">Wände / Kollisionen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tiles-einbinden" class="nav-link">Tiles einbinden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#maps" class="nav-link">Maps</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#neue-karte-in-tiled-anlegen" class="nav-link">Neue Karte in Tiled anlegen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#karte-gestalten" class="nav-link">Karte gestalten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#spezielle-layer" class="nav-link">Spezielle Layer</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#start-layer" class="nav-link">Start Layer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exit-layer" class="nav-link">Exit Layer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#weitergehende-inhalte" class="nav-link">Weitergehende Inhalte</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#webseite-einbinden" class="nav-link">Webseite einbinden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jitsi-einbinden" class="nav-link">Jitsi einbinden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#stille-bereiche" class="nav-link">Stille Bereiche</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wande-nicht-begehbare-bereiche" class="nav-link">Wände / nicht begehbare Bereiche</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#badgevergabe" class="nav-link">Badgevergabe</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animationen" class="nav-link">Animationen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sound" class="nav-link">Sound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="0"><a href="#paketierung-deployment-und-infrastruktur" class="nav-link active">Paketierung, Deployment und Infrastruktur</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="1"><a href="#karte-speichern-exportieren" class="nav-link">Karte speichern / exportieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#lizenzen" class="nav-link">Lizenzen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#verzeichnisstruktur" class="nav-link">Verzeichnisstruktur</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#testen" class="nav-link">Testen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#eigene-instanzen" class="nav-link">Eigene Instanzen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#big-blue-button" class="nav-link">Big Blue Button</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#infrastruktur" class="nav-link active">Infrastruktur</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="howto-rc3-world-maps">HowTo rC3 world maps</h1>
+<p><a href="https://howto.rc3.world/maps.en.html">english version</a></p>
+<p>Zum Congress wird es eine Art 2D-Adventure, die rC3.world geben.
+Dieses Tutorial soll erklären, wie Karten und Inhalte zur rC3.world beigesteuert werden können.
+Falls danach noch Fragen offen sind, meldet euch gerne per <a href="mailto:world@rc3.world">Email</a> und wir versuchen das Tutorial zu ergänzen.</p>
+<h2 id="metainformationen">Metainformationen</h2>
+<h3 id="disclaimer">Disclaimer</h3>
+<p>Dieses Tutorial ist ein work in progress und wird immer mal wieder erweitert, es lohnt sich daher mehrfach hier vorbeizuschauen.</p>
+<h3 id="updates">Updates</h3>
+<ul>
+<li>2020-12-08: Animationen hinzugefügt.</li>
+<li>2020-12-11: Assembly Anmeldung hinzugefügt, Lobbykarten hinzugefügt, Layer hervorheben.</li>
+<li>2020-12-15: Sound, BBB, Kartengröße hinzugefügt.</li>
+<li>2020-12-16: Das world@ Postfach ist umgezogen, falls ihr heute eine 
+Mail geschrieben, aber noch keine Antwort erhalten habt, schreibt bitte 
+einfach nochmal. :)</li>
+<li>2020-12-16: Neues URL Schema, Testinstanz nun unter: https://test.visit.at.wa-test.rc3.cccv.de/_/global/<your_map_url_here> (passt ggf eure CORS Header an!)</your_map_url_here></li>
+<li>2020-12-17: Audio: Externe URLs werden nicht mehr unterstüzt. <strong>WICHTIG:</strong> Falls ihr Streams einbinden wollt, müsst ihr uns kontaktieren!</li>
+<li>2020-12-20: Vorlage ergänzt.</li>
+<li>2020-12-22: World-Exit ergänzt.</li>
+<li>2020-12-22: Cross-Assembly Links ergänzt.</li>
+<li>2020-12-25: <a href="https://howto.rc3.world/exitUrls.html">Liste der exitUrls </a> ergänzt.</li>
+<li>2020-12-28: Badgevergabe-Property hinzugefügt</li>
+</ul>
+<h3 id="known-bugs">Known Bugs</h3>
+<p>Folgende Bugs sind aktuell bekannt, wir versuchen bereits, Lösungen dafür zu finden:</p>
+<ul>
+<li>Ausgänge können nicht auf dem rechten Rand der Karte liegen</li>
+<li>exitUrl führt bei mehreren Exits von einer Karte zur anderen teils zu falschen Startpunkten<ul>
+<li>exitSceneUrl tut stattdesssen, obwohl angeblich deprecated</li>
+</ul>
+</li>
+<li>das gleiche Tileset (mit dem gleichen Namen) mehrfach einbetten führt zu Darstellungsfehlern in WorkAdventure</li>
+<li>Tilesets &gt; 4096px Kantenlänge scheinen in manchen Browsern Probleme zu machen.</li>
+</ul>
+<h2 id="schnell-uberblick">Schnell-Überblick</h2>
+<h3 id="limitierungen">Limitierungen</h3>
+<p>Instanzen skalieren nicht unendlich, bitte denkt beim Karten 
+erstellen daran. Unsere Erfahrung zeigt, dass das Limit irgendwo bei 200
+ Nutzer:innen liegt. Karten für 2k Spieler:innen ergeben also keinen 
+Sinn. Bitte versucht nicht, Vortragssäle nachzubauen. Es ergibt 
+schlichtweg keinen Sinn, im Spiel zu idlen und währenddessen Talks zu 
+schauen.</p>
+<p>Die Map-Größe kann davon unabhängig relativ flexibel dimensioniert 
+werden.
+Karten im Bereich von 128x128 Tiles laufen ziemlich gut, Karten im 
+Bereich von 1000x1000 gehen mit einer relevanten Ladezeit einher.
+Wir raten eher zu mehreren kleineren Karten anstelle einer riesigen.</p>
+<p>Ausgehenden Links wird ein Dereferrer vorgeschaltet.</p>
+<h3 id="starter-kit">Starter-Kit</h3>
+<p>Falls ihr nicht wisst wo/wie ihr anfangen sollt haben wir inzwischen auch ein <a href="https://git.cccv.de/rc3/world-map-starterkit">Starter-Kit</a> für euch das ihr einfach forken könnt.</p>
+<h3 id="tiles-sprites">Tiles / Sprites</h3>
+<p>Grundlegend bestehen die Karten aus sogenannten Tiles oder Sprites. 
+Historisch gibt es wohl Unterschiede zwischen den Begriffen, wir werden 
+sie hier aber synonym verwenden. Für die rC3.world werden Tiles in der 
+Größe 32x32 empfohlen, Tiles in anderen Größen können zu Problemen 
+führen. Tiles können Transparenz beinhalten und liegen im png-Format 
+vor.</p>
+<h3 id="layer-und-attribute">Layer und Attribute</h3>
+<p>Damit ein Tile weitergehende Eigenschaften als sein Aussehen hat, 
+müssen entsprechende Attribute zugeordnet werden. Dies erfolgt über 
+Layer: Das Layer trägt Attribute, und speichert für welche Felder sie 
+gelten sollen.</p>
+<h3 id="wie-kommts-spater-in-die-world">Wie kommts später in die world?</h3>
+<p>Um Karten in der Welt einbringen zu können, müsst ihr ein <a href="https://signup.c3assemblies.de/">Assembly anmelden</a> und euch anschließend kurz unter Angabe eures Assemblynamens unter <a href="mailto:world@rc3.world">world@rc3.world</a> melden.</p>
+<p>Eure Karten legt ihr dann bitte in einem git Repo eurer Wahl ab und 
+teilt später in unserem Backend die URL mit, unter der das Repo geklont 
+werden kann. Unsere world-Infrastruktur wird anschließend eine Instanz 
+für euch spawnen, das Karten-Repo pullen und diese dort einbinden.</p>
+<p>Wir werden eure Karten regelmäßig aus eurem git Repo aktualisieren 
+und die aktuellsten Karten ausspielen. Damit Spieler:innen die neue 
+Version sehen, müssen sie die Seite aber neu laden.</p>
+<h3 id="einstiegspunkt-lobby-exit">Einstiegspunkt / Lobby / Exit</h3>
+<p>Wir gestalten zentrale Einstiegskarten, über die man dann zu euren Assembly-Karten gelangt.</p>
+<p>Außerdem bitten wir euch, einen Platz für einen Ausgang zurück zur Lobby freizuhalten. 
+Eine <a href="https://howto.rc3.world/exitUrls.html">Liste mit den jeweiligen exitUrls </a>
+Meldet euch dafür bitte unter Angabe eures Assembly-Nnamens bei <a href="mailto:world@rc3.world">world@rc3.world</a>, falls ihr  euch in der Liste nicht wiederfindet.</p>
+<h4 id="world-exit">World-Exit</h4>
+<p>Als einheitlichen, wiedererkennbaren Ausgang zur Lobby-Karte empfehlen wir dieses Tile zu verwenden:</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/worldExit.png"></p>
+<p>Eure individuellen exitUrls findet ihr <a href="https://howto.rc3.world/exitUrls.html">hier</a></p>
+<h4 id="cross-assembly-links">Cross-Assembly Links</h4>
+<p>Es gibt Platzhalter welche automatisch mit dem richtigen Link ersetzt werden.
+Beispiel für einen Platzhalter: <code>{&lt;SLUG&gt;/map.json#YourStartLayer}</code>. <strong>Die &lt;&gt; und {} sind wichtig und müssen drin bleiben.</strong></p>
+<p><em>Euren Slug</em> findet ihr im Maschinenraum unter Organisational Data -&gt; Basic Data -&gt; "Kurzname"</p>
+<p>Ihr wollt zum Beispiel direkt auf die Assembly foobar linken und der Slug vom foobar Assembly lautet <code>foobar</code>, dann ergibt sich <code>{&lt;foobar&gt;/main.json}</code> für euren Exit-Layer.</p>
+<p>Gegenwärtig müsst ihr die Slugs anderer Assemblies dort erfragen, ihr könnt sie nicht selbst im Maschinenraum sehen.</p>
+<p>Achtung: Das funktioniert <strong>nicht</strong> auf der Testinstanz.</p>
+<h1 id="kartengestatung">Kartengestatung</h1>
+<h2 id="tiles">Tiles</h2>
+<h3 id="tiles-finden">Tiles finden</h3>
+<ul>
+<li>Tiles gibt es massig im Internet, häufig zu Tilesets (mehrere Tiles zu einem Thema) zusammengefasst.</li>
+<li>Seiten auf denen ihr schöne Tiles finden könnt sind zum Beispiel:<ul>
+<li><a href="https://itch.io/">itch.io</a></li>
+<li><a href="https://opengameart.org/">opengameart.org</a></li>
+<li><a href="https://www.deviantart.com/">deviantart.com</a></li>
+</ul>
+</li>
+<li>Achtet auf die Größe der Tiles!</li>
+<li>Achtet auf die Lizenz der Tilesets<ul>
+<li>wir werden nicht aktiv prüfen, unter welcher Lizenz eure Tiles 
+stehen, allerdings nach dem Prinzip "takedown on notice" auf Verstöße 
+reagieren.</li>
+</ul>
+</li>
+<li><a href="https://tiles.rc3.world/">Shared Tiles Repo</a></li>
+</ul>
+<h3 id="tiles-gestalten-pixeln">Tiles gestalten / "pixeln"</h3>
+<p>Tiles können auch selbst gestaltet bzw. vorhandene verändert werden, 
+was häufig auch "pixeln" genannt wird. Hierzu empfiehlt sich der Editor <a href="https://krita.org/">krita</a>, es geht aber prinzipiell auch mit anderen.</p>
+<ul>
+<li>Achtet auch hierbei darauf, dass die Tiles 32x32 Pixel groß sind. 
+Ihr könnt euch unter view -&gt; show grid ein Raster einblenden und 
+unter settings -&gt; dockers -&gt; grid and guides den 
+Einstellungs-Docker einblenden, in dem ihr die Grid-Größe festlegen 
+könnt.</li>
+<li>Falls ihr Übergänge von Materialien gestalten müsst, nutzt 
+Transparenz und baut Übergänge von einem Material zu Transparenz, das 
+ist vielseitiger nutzbar und erspart euch, zu jedem anderen Material 
+einen Übergang gestalten zu müssen.</li>
+<li>Pixel-Art Workshop von blinry: <a href="https://media.ccc.de/v/34C3-jugend-hackt-1016-pixel_art_workshop">media.ccc.de/v/34C3-jugend-hackt-1016-pixel_art_workshop</a></li>
+</ul>
+<h3 id="wande-kollisionen">Wände / Kollisionen</h3>
+<p>Um Tiles als undurchgängig zu markieren, müsst ihr diese im Tileeditor öffnen und die custom property <code>collides</code>
+ (bool true) für das jeweilige Tile (nicht mit Layern verwechseln!) 
+setzen. Vergesst nicht euer Tileset anschließend zu speichern! Tiled 
+bietet zwar auch die Möglichkeit collision shapes für einzelne Tiles 
+festzulegen, diese werden von der Software allerdings ignoriert.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/edit_tileset.png"></p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_collides.png"></p>
+<h3 id="tiles-einbinden">Tiles einbinden</h3>
+<p>Tilesets müssen in Tiled in die Map eingebunden werden, ein Verweis 
+auf externe Tilesets im TSX Format ist nicht möglich. (Das heißt nicht, 
+dass die Bilddateien mit eingebunden sind. PNG-Dateien müssen ebenfalls 
+auf den Server geladen werden.)</p>
+<h2 id="maps">Maps</h2>
+<p>Karten können mittels des Editors <a href="https://www.mapeditor.org/">Tiled</a>
+ erstellt werden. Ähnlich wie in diversen Zeichenprogrammen können 
+Karten aus mehreren Layern bestehen, die beim Rendern übereinander 
+gelegt werden. Layer können transparent gestaltet werden.</p>
+<h3 id="neue-karte-in-tiled-anlegen">Neue Karte in Tiled anlegen</h3>
+<p>Achtet beim Erstellen einer neuen Karte auf folgende Einstellungen:</p>
+<ul>
+<li>Karte muss orthogonal sein.</li>
+<li>Tilessize sollte 32x32 sein.</li>
+<li>Während des Erstellens kann es sinnvoll sein, eine unendliche Karte 
+zu verwenden statt vorab eine Größe festzulegen. Dies muss beim finalen 
+Speichern der Karte wieder auf eine feste Größe geändert werden.</li>
+</ul>
+<h3 id="karte-gestalten">Karte gestalten</h3>
+<p>Eine Karte kann aus beliebig vielen übereinander gelegten Tile Layern
+ bestehen. Eure Karte braucht dabei mindestens einen Startlayer, der 
+definiert, wo auf der Karte neue Spieler:innen spawnen. Dieses Layer 
+muss zwingend <code>start</code> heißen. Außerdem braucht ihr ein Object Layer <code>floorLayer</code> das definiert, auf welchem Layer sich die Spielfigur bewegt.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/layer.png"></p>
+<p>Für ein leichteres Gestalten hebt euch den aktuellen Layer hervor:</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/settings_show_animations.png"></p>
+<h2 id="spezielle-layer">Spezielle Layer</h2>
+<p>Es gibt ein paar spezielle Layer bzw. Zusatzfunktionen für Layer. 
+Diese werden bis auf das Start Layer über die custom properties der 
+einzelnen Layer abgebildet.</p>
+<h3 id="start-layer">Start Layer</h3>
+<p>Eure Karte braucht zwingend ein Start Layer mit dem Namen <code>start</code>.
+ Alle Stellen in diesem Layer, die ein Tile (egal welches) enthalten, 
+sind später Startpunkte für neue Spielfiguren. Gibt es mehrere Tiles, 
+wird beim Betreten zufällig eines davon als Startpunkt ausgewählt. 
+Schiebt dieses Layer am besten ganz nach unten in eurem Stack, die 
+Tiles, die Startpunkte markieren, werden dann einfach von den 
+darüberliegenden verdeckt.</p>
+<p>Außerdem könnt ihr weitere Start Layer erstellen, um weitere 
+Einstiegspunkte zu definieren, zum Beispiel um an bestimmte Stellen auf 
+eurer Karte zu springen. Diese Layer funktionieren ähnlich wie der 
+eigentliche Start Layer (also einfach beliebige Tiles an die Stelle, wo 
+die Spielfigur spawnen soll), können beliebig heißen, brauchen 
+allerdings eine custom property <code>startLayer</code> (bool true). Der
+ Name dieses Layers ist auch die "Sprungadresse", die ihr zum Betreten 
+über dieses Layer braucht. Wenn eure Karte also <code>foo.json</code> heißt und der Start Layer, auf den ihr springen wollt, <code>bar</code>, dann wäre die Sprungmarke dafür <code>foo.json#bar</code>.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_startlayer.png"></p>
+<h3 id="exit-layer">Exit Layer</h3>
+<p>Ähnlich wie beim Start Layer könnt ihr Exits definieren. Ihr erzeugt 
+ein Layer, packt an die Stellen an denen ihr Ausgänge haben wollt ein 
+Tile, und gebt dem Layer die custom property <code>exitUrl</code>. Dieser gebt ihr als Wert (string) die Karte bzw. den Startpunkt auf dieser Karte zu der ihr springen wollt, zum Beispiel also <code>foo.json#bar</code> um auf die Karte <code>foo.json</code> und dort auf einen Startpunkt auf dem Layer <code>bar</code> zu springen.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_exiturl.png"></p>
+<h2 id="weitergehende-inhalte">Weitergehende Inhalte</h2>
+<h3 id="webseite-einbinden">Webseite einbinden</h3>
+<p>Ihr könnt Webseiten einbinden, die sich beim Betreten von bestimmten 
+Tiles öffnen. Analog zu Start und Exit Layern legt ihr ein Layer dafür 
+an, setzt Tiles an die entsprechenden Stellen und gebt dem Layer die 
+custom property <code>openWebsite</code> (string). Verwendet https!</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_openwebsite.png"></p>
+<h3 id="jitsi-einbinden">Jitsi einbinden</h3>
+<p>Auf die selbe Art könnt ihr auch Jitsi Räume in eure Karte einbinden. Setzt dazu einfach die custom property <code>jitsiRoom</code> (string) und gebt ihr als Wert den Namen den euer Jitsi Raum haben soll.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_jitsiroom.png"></p>
+<p>Jitsi Räume sind per default an die Instanz gebunden, damit jeder 
+sein eigenes "Hackcenter" haben kann, falls ihr einen Jitsi Raum über 
+mehrere Instanzen sharen wollt, prefixt ihn mit <code>shared</code> (Beispiel: <code>shared Unser Jitsiraum</code>). Es können keine externen Jitsi Server angegeben, sondern nur von uns bereitgestellte genutzt werden.</p>
+<h3 id="stille-bereiche">Stille Bereiche</h3>
+<p>Solltet ihr in gewissen Bereichen keine Audio/Video Kommunikation 
+zwischen den Teilnehmern wollen, so könnt ihr hierfür einen eigenen 
+Layer anlegen und diesem die custom property <code>silent</code> (bool true) geben.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_silent.png"></p>
+<h3 id="wande-nicht-begehbare-bereiche">Wände / nicht begehbare Bereiche</h3>
+<p>Das ist ausnahmsweise kein Layer, sondern eine Tile-Eigenschaft. Beschreibung siehe weiter oben bei den Tiles.</p>
+<h3 id="badgevergabe">Badgevergabe</h3>
+<p>Ihr könnt Badges an User vergeben, wenn diese ein bestimmten Tile 
+betreten. Analog zu Start und Exit Layern legt ihr ein Layer dafür an, 
+setzt Tiles an die entsprechenden Stellen und gebt dem Layer die custom 
+property "<em>getBadge</em>" (string). Ein Token könnt Ihr für jedes Badge im Backoffice generieren. Es funktioniert jedoch nur ein <strong>Map</strong> Redeem Token.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_getBadge.png"></p>
+<h3 id="animationen">Animationen</h3>
+<p>Tiles können zu Animationen (Loops) zusammengeführt werden, um z.B. 
+fließendes Wasser oder blinkende Lichter darzustellen. Dazu müssen alle 
+"Frames" einer Animation jeweils ein eigenes 32x32 Tile sein.
+Bearbeitet dazu in Tiled das Tileset, wählt das zu animierende Tile 
+(oder ein beliebiges leeres Tile) aus und klickt auf den Animation 
+Editor:</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/animation_editor.png"></p>
+<p>Dann können alle Tiles, die Bestandteil der Animation sein sollen, 
+per drag and drop in die "playlist" gezogen werden und die Anzeigedauer 
+in Millisekunden kann eingestellt werden:</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/animation.png"></p>
+<p>Im Map-Editor sollten die Animationsloops auch schon dargestellt werden, wenn die Option im "view" Menü gesetzt ist:</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/settings_show_animations.png"></p>
+<p>Hinweis: Die Engine macht Tile-Updates nur alle 100ms, also werden 
+Animationen mit Framedurations unter 100ms vermutlich nicht gut aussehen
+ oder gar nicht funktionieren.</p>
+<p>Größere Animationen über mehrere Tiles müssen in Tiled Tile für Tile animiert werden, funktionieren aber relativ problemlos.
+(Gelegentlich laufen einzelne Tiles nicht synchron zum Rest, wir wissen doch auch nicht..)</p>
+<h3 id="sound">Sound</h3>
+<p>Layer mit der Property <code>playAudio</code> (string) spielen beim 
+Betreten der zugehörigen Tiles Sound ab. Unterstützt werden mp3-Dateien,
+ die relativ zum Pfad der Karte eingebunden werden können. Externe 
+mp3-Dateien können nicht eingebunden werden. Falls ihr Streams eimbinden
+ wollt wendet euch bitte an <a href="mailto:world@rc3.world">world@rc3.world</a>. Soll sich der Audioschnipsel wiederholen so verwendet stattdessen einfach <code>playAudioLoop</code> (string) als Property.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/cp_playaudio.png"></p>
+<p>Bitte verwendet nur <strong>GEMA-freie</strong> Soundschnipsel! Falls
+ ihr Streams einbindet müsst ihr außerdem eine Trackliste anlegen um der
+ GEMA nachweisen zu können, dass ihr nur freie Musik gespielt habt.</p>
+<h1 id="paketierung-deployment-und-infrastruktur">Paketierung, Deployment und Infrastruktur</h1>
+<h2 id="karte-speichern-exportieren">Karte speichern / exportieren</h2>
+<p>Karten müssen als json gespeichert werden, Tilesets sollten vorher 
+eingebunden werden. Die relevanten Dateien sind anschließend eure Karten
+ im json-Format und die verwendeten Tilesets als png.</p>
+<p>Unendliche Karten müsst ihr vor dem Speichern in endliche umwandeln, 
+hierzu einfach in den properties der Karte den Haken bei "infinite" 
+entfernen und speichern.</p>
+<p><img alt="" src="Maps%20-%20rC3%20howto-Dateien/map_properties.png"></p>
+<h2 id="lizenzen">Lizenzen</h2>
+<p>Sofern ihr CC-BY Tiles / Bilder verwendet oder eure eigene Lizenz verwenden wollt, könnt ihr dies in der Datei <code>COPYRIGHT</code> tun. Die Datei muss auf der selben Verzeichnisebene wie eure Karte liegen.</p>
+<h2 id="verzeichnisstruktur">Verzeichnisstruktur</h2>
+<p>Achtet beim Ablegen eurer Karten bitte auf die Verzeichnisstruktur, folgende Dinge solltet ihr konkret beachten:</p>
+<ul>
+<li>Eure Startkarte muss main.json heißen und im Hauptverzeichnis liegen.</li>
+<li>Andere Karten können in eigenen Ordnern oder auch im Hauptverzeichnis liegen.</li>
+<li>Achtet bei Verlinkungen der Karten in eurer Karte auf die korrekte relative URL.</li>
+<li>Achtet auf die Pfade eurer Tilesets (zur Not direkt im json anpassen).</li>
+</ul>
+<p>Hier ein Beispiel wie ein Verzeichnis mit Karten exemplarisch aussehen könnte:</p>
+<pre><code>.
+├── bla
+│   ├── COPYRIGHT
+│   └── keks.json
+├── blubb.json
+├── COPYRIGHT
+├── foo
+│   ├── bar.json
+│   └── tileset2.png
+├── main.json
+└── tileset.png
+</code></pre>
+
+<h2 id="testen">Testen</h2>
+<p>Zum Testen könnt ihr eure Dateien einfach auf einen beliebigen per 
+https erreichbaren Server legen und über die URL auf unserer Testinstanz
+ einbinden. Nehmen wir an, eure Karte läge unter <em>https://example.com/mymaps/foo.json</em>, so wäre die URL zum Testen <em>https://test.visit.at.wa-test.rc3.cccv.de/_/global/example.com/mymaps/foo.json</em>. Die Möglichkeit externe Karten einzubinden existiert nur zum Testen und wird zum rC3 deaktiviert werden.</p>
+<p>Ggf. kann es sein, dass ihr passende CORS Header auf dem ausliefernden Webserver setzen müsst.</p>
+<h2 id="eigene-instanzen">Eigene Instanzen</h2>
+<p>Wir werden sämtliche Instanzen für die rC3.world betreiben, versucht 
+bitte nicht, eigene Instanzen dafür aufzusetzen, Sprünge zu Instanzen 
+außerhalb der rC3.world werden nicht möglich sein.</p>
+<h2 id="big-blue-button">Big Blue Button</h2>
+<p>Wir mögen BBB, aber die rC3.world bietet bereits eine solide 
+Einbettung für Jitsi, welches wir auf dezidierter Hardware betreiben. 
+Der Aufwand BBB einbindbar zu machen ist aktuell nicht stemmbar für uns.
+Bitte rechnet nicht damit und benutzt stattdessen Jitsi.</p>
+<h2 id="infrastruktur">Infrastruktur</h2>
+<p>Die Infrastruktur der rC3.world wird von <a href="https://www.hetzner.com/de/cloud"><img src="Maps%20-%20rC3%20howto-Dateien/hetzner-logo.svg" alt="hetzner online" width="100px"></a> gesponsert.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p> Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>. <a href="https://legal.rc3.world/">Impressum</a> <a href="https://legal.rc3.world/">Datenschutz</a></p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="Maps%20-%20rC3%20howto-Dateien/base.js" defer="defer"></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</body></html>
