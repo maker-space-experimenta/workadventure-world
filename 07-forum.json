@@ -20,7 +20,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f447e3903e692dbed964e9"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f447e3903e692dbed964e9?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -38,7 +38,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45d78903e699aa1d964ee"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45d78903e699aa1d964ee?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -56,7 +56,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45dd4903e69da9fd964ef"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45dd4903e69da9fd964ef?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -74,7 +74,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f4492a903e6979eed964eb"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f4492a903e6979eed964eb?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -92,7 +92,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45cfc903e694390d964ec"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45cfc903e694390d964ec?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -110,7 +110,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f9804c17a2d63dcf0aa075"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f9804c17a2d63dcf0aa075?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -128,7 +128,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f4479d903e698394d964e8"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f4479d903e698394d964e8?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -146,7 +146,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45e2f903e697521d964f0"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45e2f903e697521d964f0?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -164,7 +164,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45f14903e697358d964f1"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45f14903e697358d964f1?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -182,7 +182,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45f60903e69439bd964f2"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f45f60903e69439bd964f2?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -200,7 +200,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f46258903e69a525d964f3"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f46258903e69a525d964f3?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -218,7 +218,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f462a3903e69fa9cd964f4"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f462a3903e69fa9cd964f4?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -236,7 +236,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f5df285a0fa7cd232b780a"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f5df285a0fa7cd232b780a?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -254,7 +254,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f6be4331692388ee88a4ad"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f6be4331692388ee88a4ad?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -272,7 +272,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f9845e17a2d615ec0aa089"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f9845e17a2d615ec0aa089?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -290,7 +290,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f71b62316923261988a641"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f71b62316923261988a641?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -326,7 +326,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f70ac83169230cb488a5f8"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f70ac83169230cb488a5f8?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -344,7 +344,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f81f603169236e7a88a8c4"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f81f603169236e7a88a8c4?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -362,7 +362,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f86662316923a81788a9c9"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f86662316923a81788a9c9?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -380,7 +380,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f97b5e17a2d694a50aa05b"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f97b5e17a2d694a50aa05b?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -398,7 +398,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f989c117a2d664fd0aa0a9"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f989c117a2d664fd0aa0a9?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -416,7 +416,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60fab8b617a2d66ed80aa477"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60fab8b617a2d66ed80aa477?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -434,7 +434,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60fae446531e7742f2ec3de1"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60fae446531e7742f2ec3de1?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -452,7 +452,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60facd1fb532a75860a9d31d?noMenu=true"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60facd1fb532a75860a9d31d?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
