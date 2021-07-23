@@ -452,7 +452,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60facd1fb532a75860a9d31d"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60facd1fb532a75860a9d31d?noMenu=true"
                 }],
          "type":"tilelayer",
          "visible":true,

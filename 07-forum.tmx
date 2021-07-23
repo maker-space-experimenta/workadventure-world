@@ -2838,7 +2838,7 @@
  </layer>
  <layer id="38" name="projekt-uboot" width="100" height="100">
   <properties>
-   <property name="openWebsite" value="https://makerfaire-heilbronn.de/event/projects/60facd1fb532a75860a9d31d"/>
+   <property name="openWebsite" value="https://makerfaire-heilbronn.de/event/projects/60facd1fb532a75860a9d31d?noMenu=true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
