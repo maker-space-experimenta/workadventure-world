@@ -308,7 +308,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f810e0316923156288a883"
+                 "value":"https:\/\/makerfaire-heilbronn.de\/event\/projects\/60f810e0316923156288a883?wa=true"
                 }],
          "type":"tilelayer",
          "visible":true,
